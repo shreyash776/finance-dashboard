@@ -11,7 +11,7 @@ export interface Widget {
     width: number;
     height: number;
   };
-  data?: any;
+  data?: unknown;
   lastUpdated?: Date;
 }
 
@@ -28,7 +28,7 @@ export interface WidgetConfig {
 
 export interface ApiResponse {
   success: boolean;
-  data: any;
+  data: unknown;
   fields: string[];
   error?: string;
 }
